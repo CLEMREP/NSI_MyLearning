@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  
+  <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="icon" type="image/svg" href="images/logo.svg" />
+  <title>My Learning - Aide pédagogique</title>
+</head>
+
+<nav class="navbar is-danger">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+        <img src="images/logo.svg" alt="logo" width="112" height="28">
+    </a>
+  </div>
+
+  <div id="navMenuColordanger-example" class="navbar-menu"> <!-- Menu déroulant Tronc Commun -->
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="">
+          Tronc commun
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="ressources/tronc/maths/maths.html">
+            Maths
+          </a>
+          <a class="navbar-item" href="ressources/tronc/français/français.html">
+            Français
+          </a>
+          <a class="navbar-item" href="ressources/tronc/anglais/anglais.html">
+            Anglais
+          </a>
+          <a class="navbar-item" href="ressources/tronc/espagnol/espagnol.html">
+            Espagnol
+          </a>
+          <a class="navbar-item" href="ressources/tronc/histoire-geographie/histoire-geographie.html">
+            Histoire-Géographie
+          </a>
+          <a class="navbar-item" href="ressources/tronc/sciences/sciences.html">
+            Enseignement Scientifique
+          </a>
+        </div>
+      </div>
+      
+      <div class="navbar-item has-dropdown is-hoverable"> <!-- Menu déroulant Options -->
+        <a class="navbar-link" href="">
+          Options
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="ressources/options/nsi/nsi.html">
+            Numérique Science de l'Informatique
+          </a>
+          <a class="navbar-item" href="ressources/options/physique/physique.html">
+            Physique-Chimie
+          </a>
+        </div>
+    </div>
+    
+    <div class="navbar-item has-dropdown is-hoverable"> <!-- Menu déroulant Qui sommes-nous -->
+        <a class="navbar-link" href="">
+          Qui sommes-nous ?
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="qui-sommes-nous.html">
+            My Learning c'est quoi ?
+          </a>
+          <a class="navbar-item" href="">
+            Histoire du site
+          </a>
+        </div>
+    </div>
+  
+      <a class="navbar-item" href="contact.html"> <!-- Onglet nous contacter -->
+        Nous contacter
+      </a>
+  </div>
+</div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">          
+          <p class="buttons">
+            <button id="traduction" class="button is-danger">
+              <span class="icon">
+                <i class="fas fa-globe-americas"></i>
+              </span>
+              <a class="has-text-white" href="#" onclick="pageTranslate();">Traduction</a> <!-- Function JS pour la traduction -->
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  
+  <div class="slideshow-container">
+
+  <!-- Slider des images -->
+  <div class="mySlides fade">
+    <img class="img" src="images/image1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/image2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/image3.jpg" style="width:100%">
+  </div>
+  
+</div>
+ 
+<div class="container is-fluid">
+                
+  <section class="section">
+    <div class="container has-text-centered">
+      <h2 class="title">Bienvenue sur My Learning</h2>
+      <h2 class="subtitle">Ce site a pour but de vous aider dans la réalisation de vos devoirs.</h2></br>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Mathématiques</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressoucres de Mathématiques.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/maths/maths.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Français</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressources de Français.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/français/français.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Anglais</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressources d'Anglais.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/anglais/anglais.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container is-fluid">
+          
+  <section class="section">
+    <div class="container has-text-centered">
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Espagnol</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressoucres d'Espagnol.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/espagnol/espagnol.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Histoire-Géographie</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressources d'Histoire-Géographie'.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/histoire-geographie/histoire-geographie.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <h3 class="title is-4">Enseignement Scientifique</h3>
+              <p class="block">Nous vous invitons à rejoindre nos ressources d'Enseignement Scientifique.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="ressources/tronc/sciences/sciences.html">Accès aux cours</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div> 
+
+ </main>
+
+  <footer class="footer has-background-grey-darker">
+  <div class="content has-text-centered">
+	<img  src="images/logo.svg" height="50px" width="50px" alt="Logo" /> <br>
+	<p class="has-text-white">My Learning est une plateforme internet visant à aider les élèves dans le besoin de ressources complémentaires, regroupent les différentes matières du tronc commun et des options de spécialité.</p>
+	<p class="has-text-white">&copy; My Learning - Tous droits réservés - 2020</p>
+  </div>
+</footer>
+
+<script src="script/script.js"></script>
+
+<!-- <script type="text/javascript">
+  window.onload=function() // Au chargement de la page
+{
+window.open('test.html','fenetre','toolbar=no,location=no,directories=no,status=no,scrollbars=no,resizable=no,copyhistory=no,menuBar=no,width=600,height=400');
+return(false)  // On ouvre la popup
+}
+
+</script> -->
+
+<script>
+  function pageTranslate()
+   {
+     window.open('file:///D:/Bureau/D%C3%A9veloppement/D%C3%A9veloppement%20Web/nsi/en/index.html', 'width=1920,height=1080`');
+   }
+</script>
+
+</body>
+</html>
