@@ -73,12 +73,31 @@
         </div>
 	</div>
   
-  	<a class="navbar-item" href="test"> <!-- Onglet nous contacter -->
+  	<a class="navbar-item" href="contact.html"> <!-- Onglet nous contacter -->
 		Contact us
     </a>
-  
+    </div>
+  </div>
 
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">          
+          <p class="buttons">
+            <button id="traduction" class="button is-danger">
+              <span class="icon">
+                <i class="fas fa-globe-americas"></i>
+              </span>
+              <a class="has-text-white" href="#" onclick="pageTranslate();">Traduction</a> <!-- Function JS pour la traduction -->
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
+
+<main>
 
 <main>
   
@@ -186,5 +205,11 @@
 </footer>
 
 <script src="script/script.js"></script>
+<script>
+  function pageTranslate()
+   {
+     window.open('../index.html', 'width=1920,height=1080`');
+   }
+</script>
 </body>
 </html>
