@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
   <link rel="icon" type="image/svg" href="../../../images/logo.svg" />
-  <title>My Learning - Aide pédagogique</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>My Learning - Teaching aid</title>
 </head>
 <body>
 
@@ -25,26 +26,26 @@
       <div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="">
-            Tronc commun
+            Basic curriculum
           </a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="../maths/maths.html">
-              Maths
+              Mathematics
             </a>
             <a class="navbar-item" href="../français/français.html">
-              Français
+              French
             </a>
             <a class="navbar-item" href="../anglais/anglais.html">
-              Anglais
+              English
             </a>
             <a class="navbar-item" href="../espagnol/espagnol.html">
-              Espagnol
+              Spanish
             </a>
             <a class="navbar-item" href="../histoire-geographie/histoire-geographie.html">
-              Histoire-Géographie
+              History-geography
             </a>
             <a class="navbar-item" href="../sciences/sciences.html">
-              Enseignement Scientifique
+              Scientific-Education
             </a>
           </div>
         </div>
@@ -55,31 +56,47 @@
           </a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="../../options/nsi/nsi.html">
-              Numérique Science de l'Informatique
+              Digital Computer Science
             </a>
             <a class="navbar-item" href="../../options/physique/physique.html">
-              Physique-Chimie
+              Chemical Physics
             </a>
           </div>
     </div>
     
     <div class="navbar-item has-dropdown is-hoverable"> <!-- Menu déroulant Qui sommes-nous -->
       <a class="navbar-link" href="">
-            Qui sommes-nous ?
+        Who are we ?
           </a>
       <div class="navbar-dropdown">
             <a class="navbar-item" href="../../../qui-sommes-nous.html">
-              My Learning c'est quoi ?
+              What is My Learning?
             </a>
-            <a class="navbar-item" href="../../../a-propos.html">
-              Histoire du site
+            <a class="navbar-item" href="../../../histoire.html">
+              History of the site
             </a>
           </div>
     </div>
     
       <a class="navbar-item" href="../../../contact.html"> <!-- Onglet nous contacter -->
-      Nous contacter
+        Contact us
     </a>
+  </div>
+  <div class="navbar-end">
+    <div class="navbar-item">
+      <div class="field is-grouped">          
+        <p class="buttons">
+          <button id="traduction" class="button is-danger">
+            <span class="icon">
+              <i class="fas fa-globe-americas"></i>
+            </span>
+            <a class="has-text-white" href="#" onclick="pageTranslate();">Translate</a> <!-- Function JS pour la traduction -->
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
   </nav>
 
 <main>
@@ -88,33 +105,33 @@
                 
   <section class="section">
     <div class="container has-text-centered">
-      <h2 class="title">Bienvenue sur les cours d'Histoire-Géographie</h2>
-      <h2 class="subtitle">Cette page a pour but de vous épauler dans la réaliation de vos devoirs d'Histoire-Géographie</h2></br>
+      <h2 class="title">Welcome to History-Geography courses</h2>
+      <h2 class="subtitle">This page aims to support you in the fulfillment of your History-Geography homework</h2></br>
       <div class="columns">
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 1</h3>
-              <p class="block">Description chapitre 1.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre1/histoire-geographie-chapitre1.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 1</h3>
+              <p class="block">Description chapter 1.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 2</h3>
-              <p class="block">Description chapitre 2.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre2/histoire-geographie-chapitre2.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 2</h3>
+              <p class="block">Description chapter 2.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 3</h3>
-              <p class="block">Description chapitre 3.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre3/histoire-geographie-chapitre3.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 3</h3>
+              <p class="block">Description chapter 3.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
@@ -131,27 +148,27 @@
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 4</h3>
-              <p class="block">Description chapitre 4.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre4/histoire-geographie-chapitre4.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 4</h3>
+              <p class="block">Description chapter 4.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 5</h3>
-              <p class="block">Description chapitre 5.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre5/histoire-geographie-chapitre5.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 5</h3>
+              <p class="block">Description chapter 5.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
         <div class="column">
           <div class="card">
             <div class="card-content">
-              <h3 class="title is-4">Chapitre 6</h3>
-              <p class="block">Description chapitre 6.</p>
-              <button class="button is-danger" type="button"><a style="color:white" href="Chapitre6/histoire-geographie-chapitre6.html">Accéder à ce chapitre</a></button>
+              <h3 class="title is-4">Chapter 6</h3>
+              <p class="block">Description chapter 6.</p>
+              <button class="button is-danger" type="button"><a style="color:white" href="../../../404.html">Access to courses</a></button>
             </div>
           </div>
         </div>
@@ -165,10 +182,16 @@
   <footer class="footer has-background-grey-darker">
   <div class="content has-text-centered">
 	<img  src="../../../images/logo.svg" height="50px" width="50px" alt="Logo" /> <br>
-	<p class="has-text-white">My Learning est une plateforme internet visant à aider les élèves dans le besoin de ressources complémentaires, regroupent les différentes matières du tronc commun et des options de spécialité.</p>
-	<p class="has-text-white">&copy; My Learning - Tous droits réservés - 2020</p>
+	<p class="has-text-white">My Learning is an Internet platform intended to help students needing additional resources, bringing together the different subjects of the core curriculum and the specialty options.</p>
+	<p class="has-text-white">&copy;  My Learning - All rights reserved - 2020</p>
   </div>
 </footer>
 
 </body>
+<script>
+  function pageTranslate()
+   {
+     window.open('../../../../index.html', 'width=1920,height=1080`');
+   }
+</script>
 </html>

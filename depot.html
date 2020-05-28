@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dépot de fichier</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style-depot.css">
+        <nav>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li><a class="active" href="#about">Dépôt</a></li>
+            </ul>
+        </nav>
+    </head>
+
+    <body>
+    <div class="container">
+        <h1 id="afficher" style="display: none;"> Dépot de fichier</h1>
+        <p>Cette page a pour objectif de nous aider à compléter nos ressources pédagogiques. Les ressources reçues seront traitées et triées puis publiées par notre équipe.<br>
+        Une fois votre fichier envoyer, notre équipe de modération traitera celui-ci. En fonction de l'importance et du contenu de celui-ci il sera publié ou non sur le site internet.</p>
+
+        
+    <div class="box">
+        <div class="content">
+            <select name="my_html_select_box">
+                <option>Français</option>
+                <option>Maths</option>
+                <option>Anglais</option>
+        
+                <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+
+                <input type="file" />
+
+            </select>
+            <button id="envoyer" class="button">Envoyer</button>
+        </div>
+    </div>
+    </div>
+    </body>
+
+    <footer>
+        <div class="content text-centered">
+            <img  src="images/logo.svg" height="50px" width="50px" alt="Logo" /> <br>
+            <p class="text-white">My Learning est une plateforme internet visant à aider les élèves dans le besoin de ressources complémentaires, regroupent les différentes matières du tronc commun et des options de spécialité.</p>
+            <p class="text-white">&copy; My Learning - Tous droits réservés - 2020</p>
+          </div>
+    </footer>
+
+    <script>
+          let masquer = document.getElementById('envoyer');
+      
+          masquer.addEventListener('click', hide);
+          
+          function hide() {
+              console.log("function hide");
+              document.getElementById("afficher").style.display='block';
+          };
+      </script>
+</html>

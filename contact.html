@@ -71,7 +71,7 @@
           <a class="navbar-item" href="qui-sommes-nous.html">
             My Learning c'est quoi ?
           </a>
-          <a class="navbar-item" href="">
+          <a class="navbar-item" href="histoire.html">
             Histoire du site
           </a>
         </div>
@@ -79,7 +79,28 @@
   
   	<a class="navbar-item" href=""> <!-- Onglet nous contacter -->
 		Nous contacter
-	</a>
+  </a>
+  <a class="navbar-item" href="depot.html"> <!-- Onglet nous contacter -->
+    Dépôt de documents
+  </a>
+</div>
+</div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="field is-grouped">          
+          <p class="buttons">
+            <button id="traduction" class="button is-danger">
+              <span class="icon">
+                <i class="fas fa-globe-americas"></i>
+              </span>
+              <a class="has-text-white" href="#" onclick="pageTranslate();">Traduction</a> <!-- Function JS pour la traduction -->
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>
 
 <main>
@@ -91,6 +112,17 @@
             <h2 class="title has-text-centered">Comment contacter My Learning ?
             <h2 class="subtitle has-text-centered">Il ne vous reste plus qu'à remplir le formulaire pour nous contacter.</h2></br>
             </h2>
+
+            <article id="afficher" style="display: none;" class="message is-success">
+              <div class="message-header">
+                <p>Message envoyé !</p>
+                <button id="supp" class="delete"></button>
+              </div>
+              <div class="message-body">
+                Félicitations votre message a bien était envoyé à notre équipe ! Il sera traité très prochainement, vous allez recevoir une réponse par mail.
+              </div>
+            </article>
+
             <div class="columns">
               <div class="column is-6">
                 <h4 class="title is-spaced is-4">Une question ? Vous êtes au bonne endroit.</h4>
@@ -129,7 +161,6 @@
                 </div>
               </div>
               <div class="column is-5 is-offset-1">
-                <form>
                   <div class="field">
                     <div class="control">
                       <input class="input" type="email" placeholder="Veuillez indiquer votre adresse mail.">
@@ -147,10 +178,9 @@
                   </div>
                   <div class="field">
                     <div class="control">
-                      <button class="button is-danger is-fullwidth" type="submit">Envoyer</button>
+                      <button id="envoyer" class="button is-danger is-fullwidth" type="submit">Envoyer</button>
                     </div>
                   </div>
-                </form>
               </div>
             </div>
           </div>
@@ -166,6 +196,28 @@
 	<p class="has-text-white">&copy; My Learning - Tous droits réservés - 2020</p>
   </div>
 </footer>
+<script>
+  function pageTranslate()
+   {
+     window.open('en/index.html', 'width=1920,height=1080`');
+   }
 
+
+    let masquer = document.getElementById('envoyer');
+
+    masquer.addEventListener('click', hide);
+    
+    function hide() {
+        console.log("function hide");
+        document.getElementById("afficher").style.display='block';
+    };
+
+    let supprimer = document.getElementById('afficher');
+    supprimer.addEventListener('click', supp);
+
+    function supp() {
+      document.getElementById("afficher").style.display='none';
+    }
+</script>
 </body>
 </html>
